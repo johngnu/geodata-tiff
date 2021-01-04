@@ -18,7 +18,7 @@ import org.apache.commons.httpclient.methods.GetMethod;
  * @author Johnston Castillo Valencia email: john.gnu@gmail.com
  * @since 01-03-2011
  */
-//@WebListener
+@WebListener
 public class TaskExecutorListener extends TimerTask implements ServletContextListener {
 
     private Timer timer;
@@ -38,7 +38,7 @@ public class TaskExecutorListener extends TimerTask implements ServletContextLis
         try {
             System.out.println("call endpoint");
             //execute listener
-            String url = "http://localhost:8084/vibh/endpoint/process";
+            String url = "http://localhost:8084/geodata/endpoint/process";
             HttpClient client = new HttpClient();
             HttpMethod method = new GetMethod(url);
             client.executeMethod(method);

@@ -31,7 +31,7 @@ public class LayerManagerController {
         Map<String, Object> params = this.systemParams();
 
         if (params.get("geoserverurl") == null) {
-            model.addAttribute("geoserver", "http://localhost:8090/geoserver/vibh/wms");
+            model.addAttribute("geoserver", "http://localhost:8090/geoserver/clima/wms");
         } else {
             model.addAttribute("geoserver", params.get("geoserverurl"));
         }

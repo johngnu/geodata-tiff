@@ -23,7 +23,7 @@ import org.apache.commons.httpclient.methods.GetMethod;
 /**
  * IndexController
  *
- * @author Edy Huiza Yampasi, John Castillo
+ * @author John Castillo
  * @since 01-06-2017
  */
 @Controller
